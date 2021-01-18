@@ -3,17 +3,19 @@
 //
 
 .td-navbar-cover {
-    background: $primary;
+    background: $white;
 
     @include media-breakpoint-up(md) {
-        background: transparent !important;
-
+        // background: transparent !important;
+        background: $white !important;
+        
         .nav-link {
-            text-shadow: 1px 1px 2px $dark;
+             // text-shadow: 1px 1px 2px $dark;
         }
 
         .brand-name {
-            display: none;}
+            display: none;
+        }
 
     }
 
@@ -23,12 +25,13 @@
 }
 
 .navbar-bg-onscroll {
-    background: $primary !important;
+    background: $white !important;
     opacity: inherit;
 }
 
 .td-navbar {
-    background: $primary;
+    background: $white;
+    border-bottom: 1px solid $skorange;
     min-height: 4rem;
     margin: 0;
     z-index: 32;
@@ -61,10 +64,12 @@
                 left: 26px;
                 z-index: 33;
                 padding: 10px;
-                height: 95px;
-                background: white;
+                height: 64px;
+                width: 130px;
+                /* 
+                background: white; 
                 border: 2px solid #4279f4;
-                border-top: none;
+                border-top: none;*/
 
                 @include media-breakpoint-down(md) {
                     left: 16px;
@@ -78,7 +83,7 @@
 
     .nav-link {
         text-transform: none;
-        font-weight: $font-weight-bold;
+        // font-weight: $font-weight-bold;
     }
 
     .td-search-input {

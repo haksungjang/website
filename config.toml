@@ -87,15 +87,15 @@ languageName ="Korean"
 time_format_blog = "Monday, January 02, 2006"
 time_format_default = "January 2, 2006"
 # Weight used for sorting.
-weight = 1
-
+weight = 2
 
 [languages.en]
 title = "Kubeflow"
 description = "Kubeflow makes deployment of ML Workflows on Kubernetes straightforward and automated"
 languageName ="English"
 # Weight used for sorting in the language menu:
-weight = 2
+contentDir = "content/en"
+weight = 1
 
 # Below is an example of another language (Norwegian):
 #[languages.no]

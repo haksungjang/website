@@ -10,18 +10,50 @@ html.smooth-scroll {
 
 // Theme colors
 
-$primary: #4279f4;
+// $primary: #4279f4;
+// $secondary: #fff;
+// $dark: #213d7a;
+// $info: #adb5bd;
+// $light: #dee2e6;
+
+// SK Red : #ea002c
+// SK Orange : #ff7a00
+// SK Purple : #1d1160
+// gray : #7f7f7f
+
+// main : #727173
+// dark : #444444
+
+$skred: #ea002c;
+$skorange: #ff7a00;
+$skpurple: #1d1160;
+$skgray: #7f7f7f;
+
+$primary: $skpurple;
 $secondary: #fff;
-$dark: #213d7a;
+$dark: rgba($skpurple, 1);
+$lighter: rgba($skpurple, 0.75);
 $info: #adb5bd;
+// $light: #dee2e6;
 $light: #dee2e6;
 
 // Nav bar colors
 
-$white: #fff;
-$navbar-dark-color: rgba($white, 1);
-$navbar-dark-hover-color: rgba($white, 0.75);
-$navbar-dark-active-color: $navbar-dark-color;
+// $white: #fff;
+// $navbar-dark-color: rgba($white, 1);
+// $navbar-dark-hover-color: rgba($white, 0.75);
+// $navbar-dark-active-color: $navbar-dark-color;
+
+$white: #fff; // background
+$navbar-dark-color: #000; // nav font default color
+$navbar-dark-hover-color: $skred; // nav font hover color
+$navbar-dark-active-color: $skred;
+
+$link-color: darken($skorange, 5%) !default;
+$link-decoration: none !default;
+// $link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: darken($skred, 0%) !default;
+$link-hover-decoration: none !default;
 
 // Fonts
 
@@ -38,7 +70,7 @@ $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap
 }
 
 .bg-primary-dark {
-  background-color: $dark;
+  background-color: $lighter;
 
   a {
     border-bottom: 1px dotted paleturquoise;
