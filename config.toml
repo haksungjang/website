@@ -12,8 +12,8 @@ enableRobotsTXT = true
 enableGitInfo = true
 
 # Docsy: Language settings
-contentDir = "content/en"
-defaultContentLanguage = "en"
+contentDir = "content/ko"
+defaultContentLanguage = "ko"
 # Tell Hugo not to include the /en/ element in the URL path for English docs:
 defaultContentLanguageInSubdir = false
 # Docsy: Useful when translating.
@@ -77,12 +77,25 @@ id = "UA-135379910-1"
 # Docsy: Language configuration
 
 [languages]
+
+[languages.ko]
+title = "OpenChain KWG"
+description = "An OpenChain KWG site"
+languageName ="Korean"
+# time_format_default = "2006.02.01"
+# time_format_blog = "2006.02.01"
+time_format_blog = "Monday, January 02, 2006"
+time_format_default = "January 2, 2006"
+# Weight used for sorting.
+weight = 1
+
+
 [languages.en]
 title = "Kubeflow"
 description = "Kubeflow makes deployment of ML Workflows on Kubernetes straightforward and automated"
 languageName ="English"
 # Weight used for sorting in the language menu:
-weight = 1
+weight = 2
 
 # Below is an example of another language (Norwegian):
 #[languages.no]
