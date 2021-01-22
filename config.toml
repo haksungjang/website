@@ -1,8 +1,8 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Kubeflow"
+title = "SK telecom Open Source"
 theme = ["docsy"]
-description = "Kubeflow makes deployment of ML Workflows on Kubernetes straightforward and automated"
+description = "Open Source Software at SK telecom"
 Paginate = 20
 
 # SEO
@@ -35,22 +35,23 @@ pygmentsStyle = "tango"
 
 # Top-level navigation (horizontal)
 
-[[menu.main]]
-    name = "What is Kubeflow?"
-    weight = -103
-    url = "/docs/about/kubeflow/"
-[[menu.main]]
-    name = "Documentation"
-    weight = -101
-    url = "/docs/"
-[[menu.main]]
-    name = "Blog"
-    weight = -100
-    url = "https://blog.kubeflow.org/"
+# [[menu.main]]
+#     name = "Projects"
+#     weight = -103
+#     url = "/project/"
+# [[menu.main]]
+#     name = "Guide"
+#     weight = -101
+#     url = "/guide/"
+# [[menu.main]]
+#     name = "Blog"
+#     weight = -100
+#     url = "/blog/"
+
 [[menu.main]]
     name = "GitHub"
-    weight = -99
-    url = "https://github.com/kubeflow/"
+    weight = 99
+    url = "https://github.com/sktelecom/"
 
 # Docsy: Configure the format of URLs per section.
 #[permalinks]
@@ -79,8 +80,8 @@ id = "UA-135379910-1"
 [languages]
 
 [languages.ko]
-title = "OpenChain KWG"
-description = "An OpenChain KWG site"
+title = "SKT Open Source"
+description = "Open Source Software at SK telecom" 
 languageName ="Korean"
 # time_format_default = "2006.02.01"
 # time_format_blog = "2006.02.01"
@@ -90,8 +91,8 @@ time_format_default = "January 2, 2006"
 weight = 2
 
 [languages.en]
-title = "Kubeflow"
-description = "Kubeflow makes deployment of ML Workflows on Kubernetes straightforward and automated"
+title = "SKT Open Source"
+description = "Open Source Software at SK telecom" 
 languageName ="English"
 # Weight used for sorting in the language menu:
 contentDir = "content/en"
@@ -111,88 +112,23 @@ time_format_blog = "02.01.2006"
 [params]
 
 # GitHub repository for in-page links to editing a page and opening and issues.
-github_repo = "https://github.com/kubeflow/website"
+github_repo = "https://github.com/sktelecom/website"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/kubeflow/kubeflow"
+github_project_repo = "https://github.com/sktelecom/sktelecom.github.io"
 
 RSSLink = "/index.xml"
-author = "kubeflow.org" # add your company name
-github = "kubeflow" # add your github profile name
-twitter = "kubeflow" # add your twitter profile
-#email = "myemail@myaddress.xxx"
+author = "SK telecom" # add your company name
+github = "sktelecom" # add your github profile name
+twitter = "sktelecom" # add your twitter profile
+email = "opensource@sk.com"
 
-copyright = "The Kubeflow Authors."
-privacy_policy = "https://policies.google.com/privacy"
+copyright = "SK TELECOM CO., LTD."
+privacy_policy = "https://privacy.sktelecom.com/"
 
 # Docsy: Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "007239566369470735695:624rglujm-w"
 
-# Text label for the version menu in the top bar of the website.
-version_menu = "v1.2"
 
-# The major.minor version tag for the version of the docs represented in this
-# branch of the repository. Used in the "version-banner" partial to display a
-# version number for this doc set.
-version = "v1.2"
-
-# Flag used in the "version-banner" partial to decide whether to display a 
-# banner on every page indicating that this is an archived version of the docs.
-archived_version = false
-
-# A link to latest version of the docs. Used in the "version-banner" partial to
-# point people to the main doc site.
-url_latest_version = "https://kubeflow.org/docs/"
-
-# A variable used in various docs to determine URLs for config files etc.
-# To find occurrences, search the repo for 'params "githubbranch"'.
-githubbranch = "v1.2-branch"
-
-# Add new release versions here. These entries appear in the drop-down menu
-# at the top of the website.
-[[params.versions]]
-  version = "master"
-  githubbranch = "master"
-  url = "https://master.kubeflow.org"
-
-[[params.versions]]
-  version = "v0.2"
-  githubbranch = "v0.2-branch"
-  url = "https://v0-2.kubeflow.org"
-
-[[params.versions]]
-  version = "v0.3"
-  githubbranch = "v0.3-branch"
-  url = "https://v0-3.kubeflow.org"
-
-[[params.versions]]
-  version = "v0.4"
-  githubbranch = "v0.4-branch"
-  url = "https://v0-4.kubeflow.org"
-
-[[params.versions]]
-  version = "v0.5"
-  githubbranch = "v0.5-branch"
-  url = "https://v0-5.kubeflow.org"
-
-[[params.versions]]
-  version = "v0.6"
-  githubbranch = "v0.6-branch"
-  url = "https://v0-6.kubeflow.org"
-
-[[params.versions]]
-  version = "v0.7"
-  githubbranch = "v0.7-branch"
-  url = "https://v0-7.kubeflow.org"
-
-[[params.versions]]
-  version = "v1.0"
-  githubbranch = "v1.0-branch"
-  url = "https://v1-0-branch.kubeflow.org"
-
-[[params.versions]]
-  version = "v1.1"
-  githubbranch = "v1.1-branch"
-  url = "https://v1-1-branch.kubeflow.org"
 
 # Docsy: User interface configuration
 [params.ui]
@@ -210,20 +146,20 @@ breadcrumb_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/kubeflow/website/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/kubeflow/website/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/sktelecom/sktelecom.github.io/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/sktelecom/sktelecom.github.io/issues/new">tell us how we can improve</a>.'
 
 
 [params.links]
 # Docsy: "User" links will show on left side of footer and in the community page if you have one.
 [[params.links.user]]
 	name ="Twitter"
-	url = "https://twitter.com/kubeflow"
+	url = "https://twitter.com/sktelecom"
 	icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news"
 [[params.links.user]]
 	name = "GitHub"
-	url = "https://github.com/kubeflow/kubeflow"
+	url = "https://github.com/sktelecom/sktelecom.github.io"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.user]]
@@ -233,7 +169,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/kubeflow/website/is
         desc = "Chat with other project contributors"
 [[params.links.user]]
 	name = "Mailing list"
-	url = "https://groups.google.com/forum/#!forum/kubeflow-discuss"
+	url = "https://groups.google.com/forum/#!forum/sktelecom-discuss"
 	icon = "fa fa-envelope"
         desc = "Discussion and help from your fellow users"
 [[params.links.user]]

@@ -19,20 +19,21 @@ html.smooth-scroll {
 // SK Red : #ea002c
 // SK Orange : #ff7a00
 // SK Purple : #1d1160
-// gray : #7f7f7f
+// grey : #7f7f7f
 
 // main : #727173
 // dark : #444444
 
+$skdarkgrey : #262626;
 $skred: #ea002c;
 $skorange: #ff7a00;
 $skpurple: #1d1160;
-$skgray: #7f7f7f;
+$skgrey: #7f7f7f;
 
 $primary: $skpurple;
 $secondary: #fff;
-$dark: rgba($skpurple, 1);
-$lighter: rgba($skpurple, 0.75);
+$dark: $skdarkgrey;
+$lighter: rgba($dark, 0.9);
 $info: #adb5bd;
 // $light: #dee2e6;
 $light: #dee2e6;
@@ -49,8 +50,8 @@ $navbar-dark-color: #000; // nav font default color
 $navbar-dark-hover-color: $skred; // nav font hover color
 $navbar-dark-active-color: $skred;
 
-$link-color: darken($skorange, 5%) !default;
-$link-decoration: none !default;
+$link-color: darken($skdarkgrey, 0%) !default;
+$link-decoration: $skred !default;
 // $link-hover-color: darken($link-color, 15%) !default;
 $link-hover-color: darken($skred, 0%) !default;
 $link-hover-decoration: none !default;
@@ -123,6 +124,7 @@ $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap
     margin: 0 0 1.5em 1.5em; }
 
 #overview, #community {
+  // padding: 6em 1.5em 3em 1.5em;
   padding: 6em 1.5em 3em 1.5em;
   text-align: center;
   margin: 0; }
@@ -130,11 +132,12 @@ $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap
     font-size: 1.125em;}
 
 #overview {
-  border-bottom: 2px solid #b6d0ff;
+  // border-bottom: 2px solid #b6d0ff;
 }
 
 #community {
-  border-top: 2px solid #b6d0ff;
+  // border-top: 2px solid #b6d0ff;
+   border-top: 2px solid $skdarkgrey;
 }
 
 #pageContent .lead {
