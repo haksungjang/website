@@ -163,20 +163,20 @@ no = 'Sorry to hear that. Please <a href="https://github.com/sktelecom/sktelecom
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.user]]
-	name = "Slack"
-	url = "https://kubeflow.slack.com/join/shared_invite/zt-cpr020z4-PfcAue_2nw67~iIDy7maAQ"
-	icon = "fab fa-slack"
-        desc = "Chat with other project contributors"
+	name = "Instagram"
+	url = "https://www.instagram.com/sktelecom/"
+	icon = "fab fa-instagram"
+        desc = "SK telecom Instagram"
 [[params.links.user]]
-	name = "Mailing list"
-	url = "https://groups.google.com/forum/#!forum/sktelecom-discuss"
-	icon = "fa fa-envelope"
-        desc = "Discussion and help from your fellow users"
+	name = "Youtube"
+	url = "https://www.youtube.com/sktelecom"
+	icon = "fa fa-youtube"
+        desc = "SK telecom Youtube"
 [[params.links.user]]
-	name = "Calendar"
-	url = "https://calendar.google.com/calendar/embed?src=kubeflow.org_7l5vnbn8suj2se10sen81d9428%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-	icon = "fa fa-calendar"
-        desc = "Discussion and help from your fellow users"
+	name = "Facebook"
+	url = "https://web.facebook.com/sktelecom"
+	icon = "fa fa-facebook"
+        desc = "SK telecom Facebook"
 
 
 # Docsy: "Developer" links will show on right side of footer and in the community page if you have one.
