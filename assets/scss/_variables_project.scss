@@ -33,7 +33,7 @@ $skgrey: #7f7f7f;
 $primary: $skpurple;
 $secondary: #fff;
 $dark: $skdarkgrey;
-$lighter: rgba($dark, 0.9);
+$lighter: rgba($skpurple, 1);
 $info: #adb5bd;
 // $light: #dee2e6;
 $light: #dee2e6;
@@ -76,19 +76,41 @@ $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap
   a {
     border-bottom: 1px dotted paleturquoise;
     
-    color: paleturquoise !important;
+    // color: paleturquoise !important;
+    color: #fff !important;
     font-weight: 600;
     padding: 0 2px 1px 2px;
     text-decoration: none;
     
     &:hover {
-      border-bottom: 1px dotted #fff;
-
-      color: #fff !important;
+      // border-bottom: 1px dotted #fff;
+      // color: #fff !important;
+      border-bottom: 1px dotted $skred;
+      color: $skred !important;
     }
   }
 }
 
+.bg-primary-dark-no-bgcolor {
+  // background-color: $lighter;
+
+  a {
+    border-bottom: 1px dotted paleturquoise;
+    
+    // color: paleturquoise !important;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 0 2px 1px 2px;
+    text-decoration: none;
+    
+    &:hover {
+      // border-bottom: 1px dotted #fff;
+      // color: #fff !important;
+      border-bottom: 1px dotted $skred;
+      color: $skred !important;
+    }
+  }
+}
 .border-primary-dark {
   border-color: $info !important;
 }
@@ -137,7 +159,7 @@ $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap
 
 #community {
   // border-top: 2px solid #b6d0ff;
-   border-top: 2px solid $skdarkgrey;
+   border-top: 2px solid $skpurple;
 }
 
 #pageContent .lead {

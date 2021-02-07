@@ -1,10 +1,10 @@
 ---
-title: "HA.NU"
-linkTitle: "HA.NU"
+title: "HANU"
+linkTitle: "HANU"
 weight: 2
 type: docs
 description: >
-  HANU (HAm kke NU rim; 함께 누림)
+  HA.NU (HAm kke NU rim; 함께 누림)
 ---
 
 
